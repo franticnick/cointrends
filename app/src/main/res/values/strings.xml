@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Coin Trends</string>
+    <string name="action_settings">Settings</string>
+    <string name="error">Error occurred!</string>
+    <string name="search_hint">Search by asset symbol</string>
+    <string name="coins">coins</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="fetching_data">Fetching data ...</string>
+    <string name="assetid">AssetId:</string>
+    <string name="name">Name:</string>
+    <string name="issue_date">Issue date:</string>
+    <string name="issuer">Issuer:</string>
+    <string name="description">Description:</string>
+    <string name="decimals">Decimals:</string>
+    <string name="reissuable">Reissuable:</string>
+    <string name="quantity">Quantity:</string>
+</resources>
