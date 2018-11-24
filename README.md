@@ -22,8 +22,8 @@ for storing them for later use.
 
 ## Screenshots 
 
-![Alt text](img/Screenshot1.jpg?raw=true "Screenshot1")
-![Alt text](img/Screenshot2.jpg?raw=true "Screenshot2")
+![Alt text](img/Screenshot1.png?raw=true "Screenshot1")
+![Alt text](img/Screenshot2.png?raw=true "Screenshot2")
 
 Screenshots were taken from the app. Soon it will be available on Play Store.
 
