@@ -22,7 +22,7 @@ for storing them for later use.
 
 ## Screenshots 
 
-<img src="img/Screenshot1.png" alt="Screenshot1" style="width:360px;"/>
+<img src="img/Screenshot1.png" alt="Screenshot1" width="360"/>
 
 ![Alt text](img/Screenshot1.png?raw=true "Screenshot1" =360x640)
 ![Alt text](img/Screenshot2.png?raw=true "Screenshot2" =360x640)
