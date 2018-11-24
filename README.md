@@ -22,10 +22,7 @@ for storing them for later use.
 
 ## Screenshots 
 
-<img src="img/Screenshot1.png" alt="Screenshot1" width="360"/>
-
-![Alt text](img/Screenshot1.png?raw=true "Screenshot1" =360x640)
-![Alt text](img/Screenshot2.png?raw=true "Screenshot2" =360x640)
+<img src="img/Screenshot1.png" alt="Screenshot1" width="360"/> <img src="img/Screenshot2.png" alt="Screenshot2" width="360"/>
 
 Screenshots were taken from the app. Soon it will be available on Play Store.
 
