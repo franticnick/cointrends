@@ -9,15 +9,14 @@ Next are used:
 - Room Database
 - Kotlin coroutines
 
-Before going deeper how everything works I would like to explain what Coin Trends app does. 'Coin' in the name is not for nothing because applicaiton gets information about all the coins that
-are on trade at Wavesplatform DEX (decentralized exchange). This DEX is chosen because REST API endpoints are free and there is no limit on access. If you want to create similar application that
-works with different exchanges, you can achieve that relatively simply by changing exhange's specifics in Model layer. Since all data are static (in this version), room database is used 
-for storing them for later use.
+Before going deeper how everything works I would like to explain what Coin Trends app does. 'Coin' in the name is not for nothing because application gets information about all coins that
+are on trade at Wavesplatform's DEX (decentralized exchange). This exchange is chosen because they provide free REST API endpoints with no limits on usage. If you want to create similar 
+application that works with other exchange(s), you can achieve that relatively simply by changing exchange's specifics in the model layer. Since all data are static (at least in current version), 
+room database is used for storing them for later use.
    
 ## Architecture
 
 [ToDo]
-
 
 
 ## Screenshots 
