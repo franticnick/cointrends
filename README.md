@@ -8,6 +8,7 @@ Next are used:
 - Androidx packages (in place of appcomat)
 - Room Database
 - Kotlin coroutines
+- LiveData (ViewModel)
 
 Before going deeper how everything works I would like to explain what Coin Trends app does. 'Coin' in the name is not for nothing because application gets information about all coins that are on trade at Wavesplatform's DEX (decentralized exchange). This exchange is chosen because they provide free REST API endpoints with no limits on usage. If you want to create similar  application that works with other exchange(s), you can achieve that relatively simply by changing exchange's specifics in the model layer. Since all data are static (at least in the current version),  room database is used for storing them for later use. Because the list of coins is very long (more than 200 entries), search view is added for easy navigation to desired coin. 
 
