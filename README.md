@@ -18,8 +18,8 @@ room database is used for storing them for later use. Because the list of coins 
 
 <img src="img/diagram.png" alt="diagram.png" width="800"/>
 
-Application uses MVVM architectural pattern for layer separation. On the top is View where MainActivity resides. Activity class observes LiveData object that it gets from the ViewModel layer.
-ViewModel and Model layer are using Kotlin's coroutines to retrieve the data from DB/Internet. We can see that this pattern in combination with coroutines greatly simplifies implementation. All our 
+Application uses MVVM architectural pattern for layer separation. On the top is *View* layer where MainActivity resides. Activity class observes LiveData object that it gets from the *View Model* layer.
+ViewModel and *Model* layer are using Kotlin's coroutines to retrieve the data from DB/Internet. We can see that this pattern in combination with coroutines greatly simplifies implementation. All our 
 asynchronous calls are called in synchronous manner which completely removes need for complex "observes" blocks or interface callbacks.
 
 
