@@ -18,9 +18,32 @@ room database is used for storing them for later use. Because the list of coins 
 
 <img src="img/diagram.png" alt="diagram.png" width="800"/>
 
-Application uses MVVM architectural pattern for layer separation. On the top is *View* layer where MainActivity resides. Activity class observes LiveData object that it gets from the *View Model* layer.
-ViewModel and *Model* layer are using Kotlin's coroutines to retrieve the data from DB/Internet. We can see that this pattern in combination with coroutines greatly simplifies implementation. All our 
+Application uses MVVM architectural pattern for layer separation. On the top is **View** layer where MainActivity resides. Activity class observes LiveData object that it gets from the **View Model** layer.
+ViewModel and **Model** layer are using Kotlin's coroutines to retrieve the data from DB/Internet. We can see that this pattern in combination with coroutines greatly simplifies implementation. All our 
 asynchronous calls are called in synchronous manner which completely removes need for complex "observes" blocks or interface callbacks.
+
+HttpInteractor getDeatils method implementation:
+
+```kotlin
+    suspend fun getDetails(assetId: String): DetailsDto? {
+        var result: DetailsDto? = null
+
+        try {
+            val response = nodeHttpService.getDetailsForAsset(assetId).await()
+            if (response.isSuccessful) {
+                result = response.body()
+            } else {
+                Log.e("error", response.errorBody().toString())
+            }
+        } catch (e: Exception) {
+            Log.e("exception occurred ", e.message)
+        }
+
+        return result
+    }
+```
+
+For more about Kotlin coroutines check
 
 
 ## Screenshots 
