@@ -18,7 +18,7 @@ room database is used for storing them for later use. Because the list of coins 
 
 Here is the overview of the architecture
 
-<img src="img/diagram.png" alt="diagram.png" width="480"/>
+<img src="img/diagram.png" alt="diagram.png" width="640"/>
 
 
 ## Screenshots 
