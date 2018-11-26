@@ -25,7 +25,7 @@ asynchronous calls are called in synchronous manner which completely removes nee
 
 ## Screenshots 
 
-<img src="img/Screenshot1.png" alt="Screenshot1" width="360"/> <img src="img/Screenshot2.png" alt="Screenshot2" width="360"/>
+<img src="img/Screenshot1.png" alt="Screenshot1" width="320"/>   <img src="img/Screenshot2.png" alt="Screenshot2" width="320"/>
 
 Screenshots were taken from the app. Soon it will be available on Play Store.
 
