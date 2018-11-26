@@ -22,7 +22,7 @@ Application uses MVVM architectural pattern for layer separation. On the top is 
 ViewModel and **Model** layer are using Kotlin's coroutines to retrieve the data from DB/Internet. We can see that this pattern in combination with coroutines greatly simplifies implementation. All our 
 asynchronous calls are called in synchronous manner which completely removes need for complex "observes" blocks or interface callbacks.
 
-HttpInteractor getDeatils method implementation:
+For example, HttpInteractor getDeatils suspended method look like this:
 
 ```kotlin
     suspend fun getDetails(assetId: String): DetailsDto? {
@@ -43,8 +43,11 @@ HttpInteractor getDeatils method implementation:
     }
 ```
 
-For more about Kotlin coroutines check
+It does look like normal method, but because **nodeHttpService.getDetailsForAsset(assetId)** returns **Deffered** object, await() call gets executed without blocking a thread and resumes when deffered execution is complete (or throws corresponding exception in case of error).
 
+For more about Kotlin coroutines check:
+
+https://kotlinlang.org/docs/reference/coroutines-overview.html
 
 ## Screenshots 
 
