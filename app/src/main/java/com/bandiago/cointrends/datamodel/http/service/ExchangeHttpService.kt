@@ -16,7 +16,7 @@
 
 package com.bandiago.cointrends.datamodel.http.service
 
-import com.bandiago.cointrends.datamodel.dto.CandlesDto
+import com.bandiago.cointrends.datamodel.http.dto.CandlesDto
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Headers

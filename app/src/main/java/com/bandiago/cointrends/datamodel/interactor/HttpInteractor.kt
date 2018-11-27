@@ -17,15 +17,11 @@
 package com.bandiago.cointrends.datamodel.interactor
 
 import android.util.Log
-import androidx.lifecycle.MutableLiveData
-import com.bandiago.cointrends.datamodel.dto.DetailsDto
-import com.bandiago.cointrends.datamodel.dto.SymbolDto
+import com.bandiago.cointrends.datamodel.http.dto.DetailsDto
+import com.bandiago.cointrends.datamodel.http.dto.SymbolDto
 import com.bandiago.cointrends.datamodel.http.service.ExchangeHttpService
 import com.bandiago.cointrends.datamodel.http.service.MarketHttpService
 import com.bandiago.cointrends.datamodel.http.service.NodeHttpService
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
-import java.util.*
 
 class HttpInteractor(var exchangeHttpService: ExchangeHttpService, var marketHttpService: MarketHttpService, var nodeHttpService: NodeHttpService) {
 

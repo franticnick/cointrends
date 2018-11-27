@@ -19,8 +19,8 @@ package com.bandiago.cointrends.datamodel
 import com.bandiago.cointrends.activity.adapter.dto.CoinDto
 import com.bandiago.cointrends.datamodel.db.entity.SymbolEntity
 import com.bandiago.cointrends.datamodel.db.entity.toCoinDto
-import com.bandiago.cointrends.datamodel.dto.DetailsDto
-import com.bandiago.cointrends.datamodel.dto.toSymbolEntity
+import com.bandiago.cointrends.datamodel.http.dto.DetailsDto
+import com.bandiago.cointrends.datamodel.http.dto.toSymbolEntity
 import com.bandiago.cointrends.datamodel.interactor.DbInteractor
 import com.bandiago.cointrends.datamodel.interactor.HttpInteractor
 

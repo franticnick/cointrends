@@ -16,11 +16,10 @@
 
 package com.bandiago.cointrends.datamodel.http.service
 
-import com.bandiago.cointrends.datamodel.dto.MarketPriceDto
-import com.bandiago.cointrends.datamodel.dto.SymbolDto
+import com.bandiago.cointrends.datamodel.http.dto.MarketPriceDto
+import com.bandiago.cointrends.datamodel.http.dto.SymbolDto
 import io.reactivex.Observable
 import kotlinx.coroutines.Deferred
-import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Headers

@@ -16,7 +16,7 @@
 
 package com.bandiago.cointrends.datamodel.http.service
 
-import com.bandiago.cointrends.datamodel.dto.DetailsDto
+import com.bandiago.cointrends.datamodel.http.dto.DetailsDto
 import kotlinx.coroutines.Deferred
 import retrofit2.Response
 import retrofit2.http.GET

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bandiago.cointrends.datamodel.dto
+package com.bandiago.cointrends.datamodel.http.dto
 
 import com.bandiago.cointrends.datamodel.db.entity.SymbolEntity
 
