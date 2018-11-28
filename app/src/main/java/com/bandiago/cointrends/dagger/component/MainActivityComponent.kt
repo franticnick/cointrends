@@ -19,12 +19,12 @@ package com.bandiago.cointrends.dagger.component
 import com.bandiago.cointrends.dagger.module.HttpServiceModule
 import com.bandiago.cointrends.activity.MainActivity
 import com.bandiago.cointrends.dagger.module.MainActivityModule
-import com.bandiago.cointrends.dagger.module.RepositoryModule
+import com.bandiago.cointrends.dagger.module.MarketViewModule
 import dagger.Subcomponent
 import javax.inject.Singleton
 
 @Singleton
-@Subcomponent(modules = [MainActivityModule::class, RepositoryModule::class, HttpServiceModule::class])
+@Subcomponent(modules = [MainActivityModule::class, MarketViewModule::class, HttpServiceModule::class])
 interface MainActivityComponent {
     fun inject(activity: MainActivity)
 }
