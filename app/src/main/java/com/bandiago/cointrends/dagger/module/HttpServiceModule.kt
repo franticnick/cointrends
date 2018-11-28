@@ -72,16 +72,16 @@ class HttpServiceModule {
         .build()
 
     @Provides
-    fun providesHttpNodeService(@Named("retrofitNode") retrofit: Retrofit): NodeHttpService =
+    fun providesNodeHttpService(@Named("retrofitNode") retrofit: Retrofit): NodeHttpService =
         retrofit.create(NodeHttpService::class.java)
 
 
     @Provides
-    fun providesHttpMarketService(@Named("retrofitMarket") retrofitMarket: Retrofit): MarketHttpService =
+    fun providesMarketHttpService(@Named("retrofitMarket") retrofitMarket: Retrofit): MarketHttpService =
         retrofitMarket.create(MarketHttpService::class.java)
 
     @Provides
-    fun providesHttpExchangeService(@Named("retrofitExchange") retrofitExchange: Retrofit): ExchangeHttpService =
+    fun providesExchangeHttpService(@Named("retrofitExchange") retrofitExchange: Retrofit): ExchangeHttpService =
         retrofitExchange.create(ExchangeHttpService::class.java)
 
 }

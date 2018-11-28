@@ -16,6 +16,7 @@
 
 package com.bandiago.cointrends.dagger.module
 
+import com.bandiago.cointrends.datamodel.MarketRepository
 import com.bandiago.cointrends.datamodel.db.AppDatabase
 import com.bandiago.cointrends.datamodel.http.service.ExchangeHttpService
 import com.bandiago.cointrends.datamodel.http.service.MarketHttpService
@@ -44,5 +45,13 @@ class MarketDataModelModule {
     ): HttpInteractor {
         return HttpInteractor(exchangeHttpService, marketHttpService, nodeHttpService)
     }
+
+
+    @Singleton
+    @Provides
+    fun providesMarketDataModel(dbInteractor: DbInteractor, httpInteractor: HttpInteractor): MarketRepository {
+        return  MarketRepository(dbInteractor, httpInteractor)
+    }
+
 
 }
