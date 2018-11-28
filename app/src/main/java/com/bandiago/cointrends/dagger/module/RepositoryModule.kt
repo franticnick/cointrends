@@ -28,7 +28,7 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-class MarketDataModelModule {
+class RepositoryModule {
 
 
     @Singleton
@@ -49,7 +49,7 @@ class MarketDataModelModule {
 
     @Singleton
     @Provides
-    fun providesMarketDataModel(dbInteractor: DbInteractor, httpInteractor: HttpInteractor): MarketRepository {
+    fun providesMarketRepository(dbInteractor: DbInteractor, httpInteractor: HttpInteractor): MarketRepository {
         return  MarketRepository(dbInteractor, httpInteractor)
     }
 
