@@ -22,7 +22,7 @@ This project is created with the idea to be used as good practice guideline for 
 
 Application uses MVVM architectural pattern for layer separation. On the top is **View** layer where MainActivity resides. Activity class observes LiveData object that it gets from the **View Model** layer. ViewModel and **Model** layer are using Kotlin's coroutines to retrieve the data from DB/Internet. We can see that this pattern in combination with coroutines greatly simplifies implementation. All our asynchronous calls are called in synchronous manner which completely removes need for complex "observes" blocks or interface callbacks.
 
-For example, HttpInteractor getDeatils suspended method look like this:
+For example, HttpInteractor getDetails suspended method look like this:
 
 ```kotlin
     suspend fun getDetails(assetId: String): DetailsDto? {
